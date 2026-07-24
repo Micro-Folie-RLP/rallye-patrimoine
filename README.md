@@ -16,6 +16,24 @@ Ils découvrent ensuite :
 
 L'application est optimisée pour une utilisation sur smartphone.
 
+Julien - proposition d'arborescence 24/07/2026:
+rallye-patrimoine/
+│
+├── index.html
+├── style.css
+├── script.js
+├── manifest.json
+├── README.md
+│
+├── data/
+│     └── parcours.json
+│
+├── images/
+│
+├── icons/
+│
+└── assets/
+
 ## Fonctionnalités
 
 - 📱 Responsive (mobile)
