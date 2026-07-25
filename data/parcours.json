@@ -1,1 +1,31 @@
-placeholder 
+[
+  {
+    "id": 0,
+    "type": "accueil",
+    "titre": "Bienvenue dans le Rallye Photos",
+    "image": "accueil.jpg",
+    "texte": "Préparez-vous à explorer votre commune, à relever des défis et à observer les lieux sous un nouvel angle.",
+    "defi": "",
+    "bouton": "Commencer"
+  },
+
+  {
+    "id": 1,
+    "type": "etape",
+    "numero": 1,
+    "titre": "Médiathèque Bernard Pivot",
+    "image": "mediatheque.jpg",
+    "texte": "Votre aventure commence dans un lieu de savoir…",
+    "defi": "Avant de partir, personnalisez votre affiche d'équipe et prenez une photo de votre équipe.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+
+  {
+    "id": 2,
+    "type": "indice",
+    "numero": 2,
+    "texte": "Vous avez tourné les pages des histoires… maintenant, cherchez la forêt où les arbres racontent les leurs.",
+    "bouton": "Continuer"
+  }
+
+]
