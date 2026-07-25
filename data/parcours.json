@@ -2,9 +2,10 @@
   {
     "id": 0,
     "type": "accueil",
-    "titre": "Bienvenue dans le Rallye Photos",
+    "numero": 0,
+    "titre": "Bienvenue dans ce jeu grandeur nature - Rallye Photos !",
     "image": "accueil.jpg",
-    "texte": "Préparez-vous à explorer votre commune, à relever des défis et à observer les lieux sous un nouvel angle.",
+    "texte": "Préparez-vous à explorer votre commune, à relever des défis et à observer les lieux sous un nouvel angle.\n\nEn équipe ou en solo, votre mission sera de :\n• Capturer des photos selon des thèmes ou défis donnés\n• Réaliser des défis amusants et originaux\n\nLe tout dans un esprit de découverte, de respect et de convivialité.\n\nConsignes importantes :\n• Respectez l’environnement et les espaces visités.\n• Ne dégradez rien (nature, mobilier, bâtiments…).\n• Ne dérangez pas les habitants ou passants.\n\nChaque défi doit être illustré par une photo.\nTous les membres de l’équipe doivent participer.\nLes photos doivent être prises pendant le jeu.\nSoyez créatifs, amusants et originaux !\n\nMaintenant, munissez-vous de votre téléphone, ouvrez l’œil, faites preuve d’imagination et lancez-vous dans l’aventure !\n\nBonne chance à tous et amusez-vous bien !",
     "defi": "",
     "bouton": "Commencer"
   },
@@ -15,17 +16,52 @@
     "numero": 1,
     "titre": "Médiathèque Bernard Pivot",
     "image": "mediatheque.jpg",
-    "texte": "Votre aventure commence dans un lieu de savoir…",
-    "defi": "Avant de partir, personnalisez votre affiche d'équipe et prenez une photo de votre équipe.",
+    "texte": "Votre aventure commence dans un lieu de savoir… La médiathèque. Une médiathèque est un établissement culturel qui conserve et met à la disposition du public une collection de documents sur des supports variés (livres, DVD, CD, jeux).\n\nEn 2025, la médiathèque a fêté ses 20 ans d’existence.",
+    "defi": "Avant de partir, personnalisez votre affiche d’équipe (forme, couleur, nom d’équipe…) et prenez une photo de votre équipe.",
     "bouton": "J'ai réalisé mon défi"
   },
 
   {
     "id": 2,
     "type": "indice",
-    "numero": 2,
+    "numero": 1,
+    "titre": "Indice",
+    "image": "",
     "texte": "Vous avez tourné les pages des histoires… maintenant, cherchez la forêt où les arbres racontent les leurs.",
-    "bouton": "Continuer"
-  }
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
 
+  {
+    "id": 3,
+    "type": "etape",
+    "numero": 2,
+    "titre": "Parc du Sinodon",
+    "image": "parc_sinodon.jpg",
+    "texte": "Le Parc du Sinodon est un espace boisé de chênes verts et de résineux (Pins d’Alep et Pins maritimes), de garrigues. De nombreuses espèces de flore et de faune sont présentes dans le parc comme : la Rainette méridionale, le Crapaud commun, le Lézard des murailles, le Lézard vert, la Couleuvre Vipérine ou la Tortue d’Hermann.\n\nLe parc se trouve sur le chemin du Peïssaut qui signifie « Pays haut ».\n\nC’est certainement de cette nature omniprésente qu’est né le surnom de « saouta Buissoun » dont étaient affublés les Roquefortois.",
+    "defi": "Avant de partir, trouvez et récoltez un petit seau ou sac d’éléments de la nature (écorce, feuille séchée, petite pierre, morceaux de bois, gland, fleur…). Ils vous serviront pour une prochaine étape.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+
+  {
+    "id": 4,
+    "type": "indice",
+    "numero": 2,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Écoutez l’eau qui coule sous le pont : c’est là que votre chemin continue !",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+
+  {
+    "id": 5,
+    "type": "etape",
+    "numero": 3,
+    "titre": "Pont de la Miaine",
+    "image": "pont_miaine.jpg",
+    "texte": "Ce pont fut construit en mai 1854 pour permettre aux habitants de se rendre à l’Église. La construction coûtera 209 anciens Francs à la commune.\n\nCe pont traverse la rivière qui porte le nom de Miaine.",
+    "defi": "Réalisez une photo artistique de votre équipe aux abords du pont.",
+    "bouton": "J'ai réalisé mon défi"
+  }
 ]
