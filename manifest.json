@@ -1,0 +1,22 @@
+{
+  "name": "Rallye Patrimoine",
+  "short_name": "Rallye",
+  "description": "Jeu interactif des Journées du Patrimoine",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3efe5",
+  "theme_color": "#2f6f42",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
