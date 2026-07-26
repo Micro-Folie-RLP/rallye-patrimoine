@@ -5,22 +5,20 @@
     "numero": 0,
     "titre": "Bienvenue dans ce jeu grandeur nature - Rallye Photos !",
     "image": "accueil.jpg",
-    "texte": "Préparez-vous à explorer votre commune, à relever des défis et à observer les lieux sous un nouvel angle.\n\nEn équipe ou en solo, votre mission sera de :\n• Capturer des photos selon des thèmes ou défis donnés\n• Réaliser des défis amusants et originaux\n\nLe tout dans un esprit de découverte, de respect et de convivialité.\n\nConsignes importantes :\n• Respectez l’environnement et les espaces visités.\n• Ne dégradez rien (nature, mobilier, bâtiments…).\n• Ne dérangez pas les habitants ou passants.\n\nChaque défi doit être illustré par une photo.\nTous les membres de l’équipe doivent participer.\nLes photos doivent être prises pendant le jeu.\nSoyez créatifs, amusants et originaux !\n\nMaintenant, munissez-vous de votre téléphone, ouvrez l’œil, faites preuve d’imagination et lancez-vous dans l’aventure !\n\nBonne chance à tous et amusez-vous bien !",
+    "texte": "Préparez-vous à explorer votre commune, à relever des défis et à observer les\nlieux sous un nouvel angle.\nEn équipe ou en solo, votre mission sera de :\nCapturer des photos selon des thèmes ou défis donnés\nRéaliser des défis amusants et originaux\nLe tout dans un esprit de découverte, de respect et de convivialité.\nConsignes importantes :\nRespectez l’environnement et les espaces visités\nNe dégradez rien (nature, mobilier, bâtiments…)\nNe dérangez pas les habitants ou passants\nRéalisation des défis :\nChaque défi doit être illustré par une photo\nTous les membres de l’équipe doivent participer\nLes photos doivent être prises pendant le jeu (pas d’images anciennes)\nSoyez créatifs, amusants et originaux !\nMaintenant, munissez-vous de votre téléphone, ouvrez l’œil, faites preuve\nd’imagination et lancez-vous dans l’aventure !\nBonne chance à tous et amusez-vous bien !",
     "defi": "",
     "bouton": "Commencer"
   },
-
   {
     "id": 1,
     "type": "etape",
     "numero": 1,
     "titre": "Médiathèque Bernard Pivot",
-    "image": "mediatheque.jpg",
-    "texte": "Votre aventure commence dans un lieu de savoir… La médiathèque. Une médiathèque est un établissement culturel qui conserve et met à la disposition du public une collection de documents sur des supports variés (livres, DVD, CD, jeux).\n\nEn 2025, la médiathèque a fêté ses 20 ans d’existence.",
-    "defi": "Avant de partir, personnalisez votre affiche d’équipe (forme, couleur, nom d’équipe…) et prenez une photo de votre équipe.",
+    "image": "m_diath_que_bernard_pivot.jpg",
+    "texte": "Votre aventure commence dans un lieu de savoir… La médiathèque. Une médiathèque est un établissement culturel qui conserve et met à la disposition du public une collection de documents sur des supports variés (livres, DVD, CD, jeux). En 2025, la médiathèque a fêté ses 20 ans d’existence.",
+    "defi": "Avant de partir, personnalisez votre affiche d’équipe (forme, couleur, nom d’équipe…), et prenez une photo de votre équipe.",
     "bouton": "J'ai réalisé mon défi"
   },
-
   {
     "id": 2,
     "type": "indice",
@@ -31,18 +29,16 @@
     "defi": "",
     "bouton": "J'ai trouvé !"
   },
-
   {
     "id": 3,
     "type": "etape",
     "numero": 2,
     "titre": "Parc du Sinodon",
-    "image": "parc_sinodon.jpg",
-    "texte": "Le Parc du Sinodon est un espace boisé de chênes verts et de résineux (Pins d’Alep et Pins maritimes), de garrigues. De nombreuses espèces de flore et de faune sont présentes dans le parc comme : la Rainette méridionale, le Crapaud commun, le Lézard des murailles, le Lézard vert, la Couleuvre Vipérine ou la Tortue d’Hermann.\n\nLe parc se trouve sur le chemin du Peïssaut qui signifie « Pays haut ».\n\nC’est certainement de cette nature omniprésente qu’est né le surnom de « saouta Buissoun » dont étaient affublés les Roquefortois.",
-    "defi": "Avant de partir, trouvez et récoltez un petit seau ou sac d’éléments de la nature (écorce, feuille séchée, petite pierre, morceaux de bois, gland, fleur…). Ils vous serviront pour une prochaine étape.",
+    "image": "parc_du_sinodon.jpg",
+    "texte": "Le Parc du Sinodon est un espace boisé de chênes verts et de résineux (Pins d’Alep et Pins maritimes), de garrigues. De nombreuses espèces de flore et de faune sont présentes dans le parc comme : la Rainette méridionale, le Crapaud commun, le Lézard des murailles, le Lézard vert, la Couleuvre Viperine, ou la Tortue d’Hermann… Le parc se trouve sur le chemin du Peïssaut qui signifie « Pays haut ». C’est certainement de cette nature omniprésente qu’est nait le surnom de « saouta Buissoun » dont étaient affublés les Roquefortois ; ceux qui n’avaient d’autres choix pour se déplacer que de sauter de buissons en buissons.",
+    "defi": "Avant de partir, trouvez et récoltez un petit seau/sac d’éléments de la nature (par exemple : écorce, feuille séchée, petite pierre, morceaux de bois, gland, une fleur…). Ils vous serviront pour une prochaine étape.",
     "bouton": "J'ai réalisé mon défi"
   },
-
   {
     "id": 4,
     "type": "indice",
@@ -53,15 +49,194 @@
     "defi": "",
     "bouton": "J'ai trouvé !"
   },
-
   {
     "id": 5,
     "type": "etape",
     "numero": 3,
     "titre": "Pont de la Miaine",
-    "image": "pont_miaine.jpg",
-    "texte": "Ce pont fut construit en mai 1854 pour permettre aux habitants de se rendre à l’Église. La construction coûtera 209 anciens Francs à la commune.\n\nCe pont traverse la rivière qui porte le nom de Miaine.",
+    "image": "pont_de_la_miaine.jpg",
+    "texte": "Ce pont fut construit en mai 1854 pour permettre aux habitants de se rendre à l’Église. La construction coûtera 209 anciens Francs à la commune. Ce pont traverse la rivière qui porte le nom de Miaine, qui vient du latin \"madera\" signifiant « être mouillé ou se répandre » ou du latin \"mediana\" signifiant « la rivière du milieu » (entre le Loup et la Brague).",
     "defi": "Réalisez une photo artistique de votre équipe aux abords du pont.",
     "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 6,
+    "type": "indice",
+    "numero": 3,
+    "titre": "Indice",
+    "image": "",
+    "texte": "En chemin vers l’Église, un petit oratoire vous attend.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 7,
+    "type": "etape",
+    "numero": 4,
+    "titre": "Oratoire Notre-Dame",
+    "image": "oratoire_notre_dame.jpg",
+    "texte": "Un oratoire est un lieu public ou privé dédié à la prière. Les oratoires étaient des endroits où les habitants venaient se recueillir et demander protection. La commune de Roquefort-les-Pins compte plusieurs oratoires sur son territoire.",
+    "defi": "Réalisez une photo artistique de votre équipe aux abords de l’oratoire",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 8,
+    "type": "indice",
+    "numero": 4,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Suivez le chemin qui monte vers les cloches.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 9,
+    "type": "etape",
+    "numero": 5,
+    "titre": "Eglise Notre-Dame de Canlache",
+    "image": "eglise_notre_dame_de_canlache.jpg",
+    "texte": "Notre-Dame de Canlache apparaît dans les archives dès 1351 où elle n’était alors qu’une simple chapelle. L’église actuelle fut construite vers 1690, sur les ruines de cette chapelle considérée alors comme païenne. De sobre conception générale (clocher-porche en façade avec campanile, nef en pierre apparente, fresques modernes), l’église offre une série d’œuvres, dont certaines dues à l’artiste Anton Prinner et un chemin de croix conçu par le Roquefortois Émile Riolet. S’il n’y a pas de cérémonie, n’hésite pas à rentrer dans l’église afin de voir les œuvres d’art.",
+    "defi": "Réalisez une photo artistique de votre équipe aux abords de l’église.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 10,
+    "type": "indice",
+    "numero": 5,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Cherchez l’eau qui dort sous la terre. Le puits est là, comme un trésor caché !",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 11,
+    "type": "etape",
+    "numero": 6,
+    "titre": "Puit",
+    "image": "puit.jpg",
+    "texte": "Les puits étaient indispensables. Avant de les creuser, on consultait le sourcier. Un peu partout dans la campagne, on trouvait des petits puits, souvent à ras de terre et parfois accompagnés d’une auge permettant de faire boire les animaux. Le nom du chemin «Courraouts» vient du provençal «courrau» qui signifie «l’enclos».",
+    "defi": "Prenez une photo artistique de votre équipe autour du puits.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 12,
+    "type": "indice",
+    "numero": 6,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Un puits c’est bien, quatre c’est encore mieux ! Cherchez-les sur le chemin des Bertrands.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 13,
+    "type": "etape",
+    "numero": 7,
+    "titre": "Les 4 Puits",
+    "image": "les_4_puits.jpg",
+    "texte": "À Roquefort, il y a des sources un peu partout sur le territoire mais de faible importance et donc non exploitables. L’eau arriva à Roquefort en 1899 avec la construction du canal du Foulon. Ce n’est qu’en 1936 que l’eau commence à arriver dans les maisons.",
+    "defi": "Réalisez une photo artistique de votre équipe aux abords des puits.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 14,
+    "type": "indice",
+    "numero": 7,
+    "titre": "Indice",
+    "image": "",
+    "texte": "L’eau coule et clapote encore… Allez voir où l’on lavait le linge autrefois.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 15,
+    "type": "etape",
+    "numero": 8,
+    "titre": "Fontaine-Lavoir",
+    "image": "fontaine_lavoir.jpg",
+    "texte": "Un lavoir est un bassin alimenté en eau qui a pour vocation première de permettre de rincer le linge après l'avoir lavé. Les lavoirs étaient conçus de manière à permettre un écoulement constant de l'eau, assurant ainsi la propreté et l'hygiène. Au-delà de leur fonction pratique, les lavoirs étaient des lieux de rencontre et d'échange. Le bord du lavoir comportait en général une pierre inclinée. Les femmes, à genoux dans une sorte de bac en bois (garde-genoux), jetaient le linge dans l'eau, le tordaient en le pliant plusieurs fois, et le battaient avec un battoir en bois sur la pierre afin de l'essorer le plus possible.",
+    "defi": "Recréez une scène de lavandières avec votre équipe et prenez une photo.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 16,
+    "type": "indice",
+    "numero": 8,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Rendez-vous là où l’on faisait cuire du pain.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 17,
+    "type": "etape",
+    "numero": 9,
+    "titre": "Four",
+    "image": "four.jpg",
+    "texte": "Jusqu’à la révolution, le four à pain était le privilège du seigneur. Lui seul avait un four qui servait à tous, moyennant une redevance. Après, on construisit des fours communs. Ces fours étaient taillés dans une pierre volcanique très dure (la cinérite) qui provenait des carrières de Biot.",
+    "defi": "Réalisez une photo artistique de votre équipe aux abords du four à pain",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 18,
+    "type": "indice",
+    "numero": 9,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Cherchez le plus ancien lieu de culte",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 19,
+    "type": "etape",
+    "numero": 10,
+    "titre": "Chapelle San Peyre",
+    "image": "chapelle_san_peyre.jpg",
+    "texte": "La chapelle San Peyre fut construite au 11ème siècle, elle indique l’existence d’un nombre suffisant de croyants, et témoigne également du succès de l’évangélisation des campagnes. Secondés par l’église Saint-Michel située dans l’enceinte du château-fort (Castellas) et réservée à la cour seigneuriale, ces lieux de culte sont les deux centres de la vie rurale à l’époque médiévale.",
+    "defi": "Réalisez une photo artistique de votre équipe aux abords de la chapelle San Peyre.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 20,
+    "type": "indice",
+    "numero": 10,
+    "titre": "Indice",
+    "image": "",
+    "texte": "Espace central dans des manifestations culturelles de la commune, ce jardin offre aujourd'hui un espace scénique et des terrains de pétanque proches de la médiathèque.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 21,
+    "type": "etape",
+    "numero": 11,
+    "titre": "Jardin des Décades",
+    "image": "jardin_des_d_cades.jpg",
+    "texte": "Le jardin porte le nom de « Jardin des Décades ». En 1950, Monsieur Jean Camp, alors Maire, crée un évènement annuel : Les Décades de Provence. Ces décades de Provence sont des rencontres intellectuelles réunissant pendant plusieurs jours des écrivains, artistes et penseurs autour d'un thème culturel. La première édition porte sur la thématique : Définition du mot « Civilisation ». Après le quartier du Colombier et le quartier des Trois Feuillets, les Décades de Provence arrivent dans le jardin du quartier du Plan en 1969. La dernière édition de ces Décades de Provence aura lieu en 1985 et aura pour thème : « Science et conscience ».",
+    "defi": "Avec votre récolte des éléments de la nature (Étape 2), réalisez une œuvre éphémère dans le jardin des Décades. Prenez une photo de l’ensemble de votre équipe avec votre affiche autour de votre œuvre.",
+    "bouton": "J'ai réalisé mon défi"
+  },
+  {
+    "id": 22,
+    "type": "indice",
+    "numero": 11,
+    "titre": "Indice",
+    "image": "",
+    "texte": "indices en images tout au long de votre parcours. Votre aventure touche maintenant à sa fin. Il est temps de revenir au point de départ pour valider votre parcours.",
+    "defi": "",
+    "bouton": "J'ai trouvé !"
+  },
+  {
+    "id": 23,
+    "type": "fin",
+    "numero": 11,
+    "titre": "Bravo !",
+    "image": "fin.jpg",
+    "texte": "indices en images tout au long de votre parcours. Votre aventure touche maintenant à sa fin. Il est temps de revenir au point de départ pour valider votre parcours.",
+    "defi": "",
+    "bouton": "Recommencer"
   }
 ]
