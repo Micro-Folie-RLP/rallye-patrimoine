@@ -43,7 +43,7 @@ function afficherEtape() {
 
     if (ecran.image) {
 
-        image.src = "images/" + ecran.image;
+        image.src = ecran.image;
         image.style.display = "block";
 
     } else {
