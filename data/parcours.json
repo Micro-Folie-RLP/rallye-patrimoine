@@ -221,21 +221,11 @@
   },
   {
     "id": 22,
-    "type": "indice",
-    "numero": 11,
-    "titre": "Indice",
-    "image": "jardin des decades - indice etape 11.jpg",
-    "texte": "indices en images tout au long de votre parcours. Votre aventure touche maintenant à sa fin. Il est temps de revenir au point de départ pour valider votre parcours.",
-    "defi": "",
-    "bouton": "J'ai trouvé !"
-  },
-  {
-    "id": 23,
     "type": "fin",
     "numero": 11,
     "titre": "Bravo !",
     "image": "EGLISE - page accueil - etape 5 - page de fin.jpg",
-    "texte": "indices en images tout au long de votre parcours. Votre aventure touche maintenant à sa fin. Il est temps de revenir au point de départ pour valider votre parcours.",
+    "texte": "Votre aventure touche maintenant à sa fin. Il est temps de revenir au point de départ pour valider votre parcours.",
     "defi": "",
     "bouton": "Recommencer"
   }
