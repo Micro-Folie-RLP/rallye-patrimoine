@@ -1,159 +1,327 @@
+/* ===========================================================
+   Rallye Patrimoine
+   Version 2.0
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
 
-background:#f3efe5;
+    background:
+    linear-gradient(rgba(247,244,236,.96),rgba(247,244,236,.96)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 
-font-family:Arial,sans-serif;
+    font-family:'Inter',sans-serif;
+    color:#2d2d2d;
 
-color:#333;
+    min-height:100vh;
 
-padding:20px;
+    padding:18px;
 
 }
 
 .container{
 
-max-width:700px;
+    max-width:720px;
 
-margin:auto;
+    margin:auto;
+
+    animation:apparition .5s ease;
 
 }
 
+/* ----------------------------------------------------------- */
+
 header{
 
-text-align:center;
+    text-align:center;
 
-margin-bottom:30px;
+    margin-bottom:25px;
 
 }
 
 header h1{
 
-color:#2f6f42;
+    font-family:'Cormorant Garamond',serif;
 
-font-size:2em;
+    font-size:2.7rem;
+
+    color:#2f6f42;
+
+    letter-spacing:.5px;
+
+    margin-bottom:8px;
 
 }
 
 .sous-titre{
 
-color:#777;
+    color:#7b7b7b;
 
-margin-top:8px;
+    font-size:.95rem;
 
 }
 
+/* ----------------------------------------------------------- */
+
 .progression{
 
-background:white;
+    background:white;
 
-padding:15px;
+    padding:18px;
 
-border-radius:15px;
+    border-radius:20px;
 
-margin-bottom:20px;
+    margin-bottom:20px;
 
-box-shadow:0 4px 10px rgba(0,0,0,.08);
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.progression p{
+
+    font-weight:600;
+
+    margin-bottom:10px;
 
 }
 
 .barre{
 
-height:12px;
+    height:12px;
 
-background:#ddd;
+    background:#e6e6e6;
 
-border-radius:50px;
+    border-radius:999px;
 
-overflow:hidden;
-
-margin-top:10px;
+    overflow:hidden;
 
 }
 
 .remplissage{
 
-width:9%;
+    height:100%;
 
-height:100%;
+    background:linear-gradient(90deg,#2f6f42,#6aa84f);
 
-background:#2f6f42;
+    border-radius:999px;
+
+    transition:width .5s ease;
 
 }
 
+/* ----------------------------------------------------------- */
+
 .carte{
 
-background:white;
+    background:white;
 
-padding:20px;
+    border-radius:26px;
 
-border-radius:20px;
+    overflow:hidden;
 
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:20px;
 
-margin-bottom:20px;
+    box-shadow:
+    0 12px 28px rgba(0,0,0,.10);
+
+    animation:montee .45s ease;
 
 }
 
 .carte img{
 
-width:100%;
+    width:100%;
 
-border-radius:15px;
+    aspect-ratio:16/9;
 
-margin-bottom:15px;
+    object-fit:cover;
+
+    display:block;
 
 }
 
 .carte h2{
 
-color:#2f6f42;
+    font-family:'Cormorant Garamond',serif;
 
-margin-bottom:15px;
+    font-size:2rem;
+
+    color:#2f6f42;
+
+    padding:20px 22px 10px;
 
 }
+
+.carte p{
+
+    padding:0 22px 24px;
+
+    line-height:1.75;
+
+    font-size:1rem;
+
+    white-space:pre-line;
+
+}
+
+/* ----------------------------------------------------------- */
 
 .defi{
 
-background:#e7f3e8;
+    background:linear-gradient(145deg,#eef8ef,#dff0e1);
 
-padding:20px;
+    border-left:6px solid #2f6f42;
 
-border-radius:20px;
+    border-radius:20px;
 
-margin-bottom:25px;
+    padding:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 8px 18px rgba(0,0,0,.06);
 
 }
 
+.defi h3{
+
+    color:#2f6f42;
+
+    margin-bottom:12px;
+
+    font-size:1.2rem;
+
+}
+
+.defi p{
+
+    line-height:1.6;
+
+}
+
+/* ----------------------------------------------------------- */
+
 button{
 
-width:100%;
+    width:100%;
 
-padding:18px;
+    border:none;
 
-background:#2f6f42;
+    border-radius:18px;
 
-color:white;
+    padding:18px;
 
-border:none;
+    background:
+    linear-gradient(135deg,#2f6f42,#4d8d55);
 
-border-radius:15px;
+    color:white;
 
-font-size:18px;
+    font-size:1.1rem;
 
-font-weight:bold;
+    font-weight:700;
 
-cursor:pointer;
+    cursor:pointer;
+
+    transition:
+    transform .15s ease,
+    box-shadow .2s ease,
+    background .3s ease;
+
+    box-shadow:
+    0 10px 24px rgba(47,111,66,.35);
 
 }
 
 button:hover{
 
-background:#235533;
+    transform:translateY(-2px);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ----------------------------------------------------------- */
+
+@keyframes apparition{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes montee{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ----------------------------------------------------------- */
+
+@media (max-width:600px){
+
+header h1{
+
+font-size:2.2rem;
+
+}
+
+.carte h2{
+
+font-size:1.7rem;
+
+}
+
+.carte p{
+
+font-size:.98rem;
+
+}
+
+button{
+
+font-size:1rem;
+
+padding:16px;
+
+}
 
 }
