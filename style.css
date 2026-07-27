@@ -142,13 +142,17 @@ header h1{
 
 .carte img{
 
+    display:block;
+
     width:100%;
 
-    aspect-ratio:16/9;
+    max-height:55vh;
 
-    object-fit:cover;
+    height:auto;
 
-    display:block;
+    object-fit:contain;
+
+    background:#f6f3eb;
 
 }
 
