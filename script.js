@@ -30,7 +30,8 @@ function afficherEtape() {
 
     const contenu = document.querySelector(".carte");
     const defi = document.querySelector(".defi");
-    const bouton = document.querySelector("button");
+    const boutonSuivant = document.getElementById("suivant");
+const boutonPrecedent = document.getElementById("precedent");
 
     // Titre
     contenu.querySelector("h2").textContent =
@@ -66,7 +67,17 @@ ecran.icone + " " + ecran.titre;
     }
 
     // Bouton
-    bouton.textContent = ecran.bouton;
+    boutonSuivant.textContent = ecran.bouton;
+
+if(etapeActuelle===0){
+
+    boutonPrecedent.style.display="none";
+
+}else{
+
+    boutonPrecedent.style.display="block";
+
+}
 
     // Progression
 
@@ -98,17 +109,19 @@ ecran.icone + " " + ecran.titre;
 
 // Bouton suivant
 
-document.querySelector("button").addEventListener("click", () => {
+document.getElementById("suivant").addEventListener("click",()=>{
 
-    if (etapeActuelle < parcours.length - 1) {
+    if(etapeActuelle<parcours.length-1){
 
         etapeActuelle++;
 
-        localStorage.setItem("rallye-etape", etapeActuelle);
+        localStorage.setItem("rallye-etape",etapeActuelle);
 
         afficherEtape();
 
-    } else {
+    }
+
+    else{
 
         alert(`🏆
 
@@ -122,7 +135,7 @@ Merci d'avoir participé aux Journées Européennes du Patrimoine.
 
         localStorage.removeItem("rallye-etape");
 
-        etapeActuelle = 0;
+        etapeActuelle=0;
 
         afficherEtape();
 
@@ -130,6 +143,19 @@ Merci d'avoir participé aux Journées Européennes du Patrimoine.
 
 });
 
+document.getElementById("precedent").addEventListener("click",()=>{
+
+    if(etapeActuelle>0){
+
+        etapeActuelle--;
+
+        localStorage.setItem("rallye-etape",etapeActuelle);
+
+        afficherEtape();
+
+    }
+
+});
 
 // Lancement
 
