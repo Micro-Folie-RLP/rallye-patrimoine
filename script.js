@@ -110,7 +110,15 @@ document.querySelector("button").addEventListener("click", () => {
 
     } else {
 
-        alert("Bravo ! Vous avez terminé le Rallye 🎉");
+        alert("🏆
+
+Bravo !
+
+Vous avez terminé le Rallye Patrimoine.
+
+Merci d'avoir participé aux Journées Européennes du Patrimoine.
+
+📸 N'oubliez pas de conserver vos photos !");
 
         localStorage.removeItem("rallye-etape");
 
