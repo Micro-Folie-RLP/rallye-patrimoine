@@ -324,3 +324,45 @@ padding:16px;
 }
 
 }
+
+/* ============================
+   Navigation
+============================ */
+
+.navigation{
+
+display:flex;
+
+gap:12px;
+
+margin-top:15px;
+
+}
+
+.navigation button{
+
+flex:1;
+
+}
+
+.secondaire{
+
+background:#d9d9d9;
+
+color:#333;
+
+box-shadow:none;
+
+}
+
+.secondaire:hover{
+
+background:#c8c8c8;
+
+}
+
+.secondaire:active{
+
+transform:scale(.98);
+
+}
