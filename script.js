@@ -104,6 +104,13 @@ if(etapeActuelle===0){
 
     }
 
+setTimeout(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}, 50);
+
 }
 
 
