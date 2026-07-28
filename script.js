@@ -33,7 +33,8 @@ function afficherEtape() {
     const bouton = document.querySelector("button");
 
     // Titre
-    contenu.querySelector("h2").textContent = ecran.titre;
+    contenu.querySelector("h2").textContent =
+ecran.icone + " " + ecran.titre;
 
     // Texte
     contenu.querySelector("p").textContent = ecran.texte;
