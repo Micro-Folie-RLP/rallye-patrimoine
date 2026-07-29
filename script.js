@@ -158,11 +158,7 @@ document.getElementById("suivant").addEventListener("click",()=>{
 
     if(etapeActuelle<parcours.length-1){
 
-        etapeActuelle++;
-
-        localStorage.setItem("rallye-etape",etapeActuelle);
-
-        afficherEtape();
+        changerEtape(etapeActuelle+1);
 
     }
 
@@ -192,11 +188,7 @@ document.getElementById("precedent").addEventListener("click",()=>{
 
     if(etapeActuelle>0){
 
-        etapeActuelle--;
-
-        localStorage.setItem("rallye-etape",etapeActuelle);
-
-        afficherEtape();
+        changerEtape(etapeActuelle-1);
 
     }
 
