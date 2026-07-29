@@ -6,6 +6,44 @@
 let parcours = [];
 let etapeActuelle = 0;
 
+function changerEtape(nouvelleEtape){
+
+    const carte=document.querySelector(".carte");
+    const defi=document.querySelector(".defi");
+    const navigation=document.querySelector(".navigation");
+
+    carte.classList.add("animation-sortie");
+    defi.classList.add("animation-sortie");
+    navigation.classList.add("animation-sortie");
+
+    setTimeout(()=>{
+
+        etapeActuelle=nouvelleEtape;
+
+        localStorage.setItem("rallye-etape",etapeActuelle);
+
+        afficherEtape();
+
+        carte.classList.remove("animation-sortie");
+        defi.classList.remove("animation-sortie");
+        navigation.classList.remove("animation-sortie");
+
+        carte.classList.add("animation-entree");
+        defi.classList.add("animation-entree");
+        navigation.classList.add("animation-entree");
+
+        setTimeout(()=>{
+
+            carte.classList.remove("animation-entree");
+            defi.classList.remove("animation-entree");
+            navigation.classList.remove("animation-entree");
+
+        },450);
+
+    },300);
+
+}
+
 // Chargement des données
 async function chargerParcours() {
 
