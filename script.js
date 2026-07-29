@@ -116,15 +116,15 @@ if (ecran.id === 11) {
 
     image.onclick = function(){
 
-    if(etatPuits===0){
+        if(etatPuits===0){
 
-        image.src="puits-ouvert.jpg";
+            image.src="puits-ouvert.jpg";
 
-        etatPuits=1;
+            etatPuits=1;
 
-    }
+        }
 
-};
+    };
 
 }
 
