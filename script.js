@@ -118,7 +118,7 @@ if (ecran.id === 11) {
 
         if(etatPuits===0){
 
-            image.src="puits-ouvert.jpg";
+            image.src="puits_ouvert.jpg";
 
             etatPuits=1;
 
