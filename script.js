@@ -6,6 +6,12 @@
 let parcours = [];
 let etapeActuelle = 0;
 
+// ===============================
+// Easter Egg du puits
+// ===============================
+
+let etatPuits = 0;
+
 function changerEtape(nouvelleEtape){
 
     const carte=document.querySelector(".carte");
