@@ -116,11 +116,15 @@ if (ecran.id === 11) {
 
     image.onclick = function(){
 
-        alert("Le secret du puits n'est pas encore codé 😉");
+    if(etatPuits===0){
 
-    };
+        image.src="puits-ouvert.jpg";
 
-}
+        etatPuits=1;
+
+    }
+
+};
 
     // Défi
     if (ecran.defi === "") {
