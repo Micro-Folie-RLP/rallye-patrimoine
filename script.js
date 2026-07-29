@@ -265,8 +265,7 @@ le secret caché dans le vieux puits.
 </p>
 
 <p>
-Depuis des générations, peu de visiteurs ont remarqué ce passage
-oublié. Vous venez de retrouver l'une des anciennes clefs du village.
+Depuis des générations, peu de visiteurs ont remarqué ce passage oublié. Vous venez de retrouver l'une des anciennes clefs du village.
 </p>
 
 <p>
