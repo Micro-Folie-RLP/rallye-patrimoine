@@ -114,17 +114,25 @@ if (ecran.id === 11) {
 
     image.style.cursor = "pointer";
 
-    image.onclick = function(){
+    image.onclick = function () {
 
-        if(etatPuits===0){
+    if (etatPuits === 0) {
 
-            image.src="puits_ouvert.jpg";
+        image.src = "puits_ouvert.jpg";
+        etatPuits = 1;
+        return;
 
-            etatPuits=1;
+    }
 
-        }
+    if (etatPuits === 1) {
 
-    };
+        afficherParchemin();
+        etatPuits = 2;
+        return;
+
+    }
+
+};
 
 }
 
