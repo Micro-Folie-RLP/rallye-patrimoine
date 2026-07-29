@@ -449,6 +449,8 @@ transform:translateY(0) scale(1);
 
 }
 
+}
+
 /* ===============================
    Parchemin secret
 =============================== */
@@ -490,7 +492,5 @@ line-height:1.8;
 font-size:1.1rem;
 
 text-align:center;
-
-}
 
 }
