@@ -110,7 +110,7 @@ image.style.cursor = "default";
 // Easter Egg : le puits devient cliquable
 // =======================================
 
-if (ecran.titre.includes("Puits")) {
+if (ecran.id === 11) {
 
     image.style.cursor = "pointer";
 
