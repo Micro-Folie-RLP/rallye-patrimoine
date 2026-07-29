@@ -126,6 +126,8 @@ if (ecran.id === 11) {
 
 };
 
+}
+
     // Défi
     if (ecran.defi === "") {
 
