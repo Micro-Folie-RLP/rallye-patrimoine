@@ -255,25 +255,25 @@ function afficherParchemin(){
 
         <div class="parchemin">
 
-            <h2>🏛 Secret du vieux puits</h2>
+            const texteSecret = `
+<h3>📜 Secret du vieux puits</h3>
 
-            <p>
+<p><strong>Félicitations&nbsp;!</strong></p>
 
-            Félicitations !
+<p>
+Vous faites partie des rares explorateurs ayant découvert
+le secret caché dans le vieux puits.
+</p>
 
-            <br><br>
+<p>
+Depuis des générations, peu de visiteurs ont remarqué ce passage
+oublié. Vous venez de retrouver l'une des anciennes clefs du village.
+</p>
 
-            Vous faites partie des rares explorateurs ayant découvert le secret caché dans le vieux puits.
-
-            <br><br>
-
-            Touchez ce parchemin pour poursuivre votre découverte...
-
-            </p>
-
-        </div>
-
-    `;
+<p>
+Touchez ce parchemin pour poursuivre votre découverte…
+</p>
+`;
 
 }
 
