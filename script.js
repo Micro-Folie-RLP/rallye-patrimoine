@@ -238,6 +238,45 @@ document.getElementById("precedent").addEventListener("click",()=>{
 
 });
 
+// ===============================
+// PARCHEMIN SECRET
+// ===============================
+
+function afficherParchemin(){
+
+    const carte=document.querySelector(".carte");
+    const defi=document.querySelector(".defi");
+    const navigation=document.querySelector(".navigation");
+
+    defi.style.display="none";
+    navigation.style.display="none";
+
+    carte.innerHTML=`
+
+        <div class="parchemin">
+
+            <h2>🏛 Secret du vieux puits</h2>
+
+            <p>
+
+            Félicitations !
+
+            <br><br>
+
+            Vous faites partie des rares explorateurs ayant découvert le secret caché dans le vieux puits.
+
+            <br><br>
+
+            Touchez ce parchemin pour poursuivre votre découverte...
+
+            </p>
+
+        </div>
+
+    `;
+
+}
+
 // Lancement
 
 chargerParcours();
