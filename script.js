@@ -255,7 +255,6 @@ function afficherParchemin(){
 
         <div class="parchemin">
 
-            const texteSecret = `
 <h3>📜 Secret du vieux puits</h3>
 
 <p><strong>Félicitations&nbsp;!</strong></p>
