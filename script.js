@@ -271,7 +271,14 @@ Depuis des générations, peu de visiteurs ont remarqué ce passage oublié. Vou
 <p>
 Touchez ce parchemin pour poursuivre votre découverte…
 </p>
+
 `;
+
+    carte.querySelector(".parchemin").onclick = function(){
+
+        afficherClef();
+
+    };
 
 }
 
