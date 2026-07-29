@@ -451,46 +451,78 @@ transform:translateY(0) scale(1);
 
 }
 
-/* ===============================
-   Parchemin secret
-=============================== */
+/* ===================================== */
+/* Parchemin secret */
+/* ===================================== */
 
 .parchemin{
 
-background:#f8f1d5;
+    background:#f8edd1;
 
-border:3px solid #d8c79a;
+    border:2px solid #b89355;
 
-border-radius:20px;
+    border-radius:18px;
 
-padding:30px;
+    padding:22px;
 
-box-shadow:0 10px 30px rgba(0,0,0,.15);
+    margin:20px 0;
 
-font-family:Georgia,serif;
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
 
-cursor:pointer;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.18),
+            rgba(0,0,0,.03)
+        );
 
-animation:apparition .5s;
+    color:#4b3822;
+
+    font-family:Georgia, serif;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    cursor:pointer;
+
+    transition:.3s;
 
 }
 
-.parchemin h2{
+.parchemin:hover{
 
-margin-bottom:20px;
+    transform:scale(1.02);
 
-color:#6b4d17;
+    box-shadow:0 10px 24px rgba(0,0,0,.22);
 
-text-align:center;
+}
+
+.parchemin h3{
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    color:#6a4a18;
 
 }
 
 .parchemin p{
 
-line-height:1.8;
+    margin:12px 0;
 
-font-size:1.1rem;
+}
 
-text-align:center;
+.parchemin p:last-child{
+
+    margin-top:22px;
+
+    text-align:center;
+
+    font-style:italic;
+
+    color:#7d5d33;
 
 }
