@@ -87,6 +87,14 @@ ecran.icone + " " + ecran.titre;
     // Image
     const image = contenu.querySelector("img");
 
+// On remet toujours l'image dans son état normal
+etatPuits = 0;
+
+// On retire un éventuel ancien événement
+image.onclick = null;
+
+image.style.cursor = "default";
+
     if (ecran.image) {
 
         image.src = ecran.image;
@@ -97,6 +105,22 @@ ecran.icone + " " + ecran.titre;
         image.style.display = "none";
 
     }
+
+// =======================================
+// Easter Egg : le puits devient cliquable
+// =======================================
+
+if (ecran.titre.includes("Puits")) {
+
+    image.style.cursor = "pointer";
+
+    image.onclick = function(){
+
+        alert("Le secret du puits n'est pas encore codé 😉");
+
+    };
+
+}
 
     // Défi
     if (ecran.defi === "") {
