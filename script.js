@@ -282,6 +282,44 @@ Touchez ce parchemin pour poursuivre votre découverte…
 
 }
 
+// ===============================
+// CLEF SECRETE
+// ===============================
+
+function afficherClef(){
+
+    const carte=document.querySelector(".carte");
+
+    carte.innerHTML=`
+
+        <div class="clef-container">
+
+            <img 
+            src="clef.png"
+            class="clef"
+            id="clefSecrete">
+
+            <p>
+            Une ancienne clef vient d'être découverte...
+            </p>
+
+        </div>
+
+    `;
+
+
+    const clef=document.getElementById("clefSecrete");
+
+
+    setTimeout(()=>{
+
+        clef.classList.add("apparition");
+
+    },100);
+
+
+}
+
 // Lancement
 
 chargerParcours();
