@@ -459,10 +459,19 @@ champPseudo.addEventListener("keydown", (event) => {
 
 });
 
+// ===============================
+// TEST DU REGISTRE
+// ===============================
 
-// Lancement
+window.testerRegistre = function() {
 
-chargerParcours();
+    enregistrerDecouverte(function(reponse) {
+
+        console.log("RESULTAT :", reponse);
+
+    });
+
+};
 
 // Lancement
 
