@@ -320,6 +320,84 @@ function afficherClef(){
 
 }
 
+// =======================================
+// CHOIX DU PSEUDO
+// =======================================
+
+const champPseudo = document.getElementById("pseudo");
+const boutonCommencer = document.getElementById("commencer-rallye");
+const ecranPseudo = document.getElementById("ecran-pseudo");
+
+
+// Vérifier si un pseudo existe déjà
+
+const pseudoSauvegarde = localStorage.getItem("rallye-pseudo");
+
+if (pseudoSauvegarde) {
+
+    champPseudo.value = pseudoSauvegarde;
+
+}
+
+
+// Bouton "Commencer l'aventure"
+
+boutonCommencer.addEventListener("click", () => {
+
+    const pseudo = champPseudo.value.trim();
+
+
+    // Empêcher un pseudo vide
+
+    if (pseudo === "") {
+
+        champPseudo.focus();
+
+        champPseudo.style.borderColor = "#b94a48";
+
+        return;
+
+    }
+
+
+    // Enregistrer le pseudo
+
+    localStorage.setItem("rallye-pseudo", pseudo);
+
+
+    // Faire disparaître l'écran
+
+    ecranPseudo.style.opacity = "0";
+
+    ecranPseudo.style.transition = "opacity .5s ease";
+
+
+    setTimeout(() => {
+
+        ecranPseudo.style.display = "none";
+
+    }, 500);
+
+});
+
+
+// Permettre de valider avec la touche Entrée
+
+champPseudo.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+
+        boutonCommencer.click();
+
+    }
+
+});
+
+
+// Lancement
+
+chargerParcours();
+
 // Lancement
 
 chargerParcours();
