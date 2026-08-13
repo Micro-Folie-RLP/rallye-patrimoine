@@ -7,6 +7,72 @@ let parcours = [];
 let etapeActuelle = 0;
 
 // ===============================
+// Registre des gagnants
+// ===============================
+
+const URL_REGISTRE =
+"https://script.google.com/macros/s/AKfycbz6KB529kofP7ezXxgNr2pGUe6qDG39-RQg2dq72IOe_i_xOs4TE_21PI0gqe5MawKM/exec";
+
+// ===============================
+// Envoi du pseudo au registre
+// ===============================
+
+function enregistrerDecouverte(callback) {
+
+    const pseudo = localStorage.getItem("rallye-pseudo");
+
+    if (!pseudo) {
+
+        console.log("Aucun pseudo trouvé.");
+
+        return;
+
+    }
+
+
+    const script = document.createElement("script");
+
+    const callbackName =
+        "rallyeReponse_" + Date.now();
+
+
+    window[callbackName] = function(reponse) {
+
+        console.log("Réponse du registre :", reponse);
+
+
+        // Supprimer le script après utilisation
+
+        document.body.removeChild(script);
+
+        delete window[callbackName];
+
+
+        // Donner la réponse à la fonction appelante
+
+        if (callback) {
+
+            callback(reponse);
+
+        }
+
+    };
+
+
+    script.src =
+        URL_REGISTRE +
+        "?action=gagnant" +
+        "&pseudo=" +
+        encodeURIComponent(pseudo) +
+        "&callback=" +
+        callbackName;
+
+
+    document.body.appendChild(script);
+
+}
+
+// ===============================
 // Easter Egg du puits
 // ===============================
 
