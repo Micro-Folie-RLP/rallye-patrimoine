@@ -575,3 +575,189 @@ transform:translateY(0) scale(1);
     color:#6b4d17;
 
 }
+
+/* =========================================
+   ÉCRAN D'ACCUEIL DU RALLYE
+   ========================================= */
+
+#ecran-logo {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background: #f3efe5;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    animation: disparitionLogo 0.8s ease 2.5s forwards;
+
+}
+
+
+/* Contenu central */
+
+.logo-animation {
+
+    text-align: center;
+
+    animation: apparitionLogo 1.2s ease forwards;
+
+}
+
+
+/* Blason */
+
+.logo-animation img {
+
+    width: min(55vw, 280px);
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto 25px auto;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
+
+    animation: rotationLogo 2s ease-in-out 0.3s forwards;
+
+}
+
+
+/* Texte sous le blason */
+
+.logo-animation p {
+
+    margin: 0;
+
+    color: #2f6f42;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    opacity: 0;
+
+    animation: apparitionTexte 0.8s ease 1s forwards;
+
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+
+/* Apparition générale */
+
+@keyframes apparitionLogo {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.85);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* Petite rotation façon objet en 3D */
+
+@keyframes rotationLogo {
+
+    0% {
+
+        transform: perspective(800px)
+                   rotateY(-25deg)
+                   scale(0.95);
+
+    }
+
+    50% {
+
+        transform: perspective(800px)
+                   rotateY(20deg)
+                   scale(1.02);
+
+    }
+
+    100% {
+
+        transform: perspective(800px)
+                   rotateY(0deg)
+                   scale(1);
+
+    }
+
+}
+
+
+/* Apparition du nom du rallye */
+
+@keyframes apparitionTexte {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* Disparition de l'écran */
+
+@keyframes disparitionLogo {
+
+    0% {
+
+        opacity: 1;
+
+        visibility: visible;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+
+    }
+
+}
