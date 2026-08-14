@@ -470,6 +470,10 @@ function afficherResultatClef(reponse){
                 La découverte précédente reste enregistrée.
                 </p>
 
+<button class="bouton-continuer-secret" id="continuerSecret">
+    Continuer le jeu →
+</button>
+
             </div>
 
         `;
@@ -513,6 +517,10 @@ function afficherResultatClef(reponse){
                 de la médiathèque pour récupérer votre cadeau.
                 </p>
 
+<button class="bouton-continuer-secret" id="continuerSecret">
+    Continuer le jeu →
+</button>
+
             </div>
 
         `;
@@ -554,6 +562,10 @@ function afficherResultatClef(reponse){
                 Mais vous pouvez être fier d'avoir trouvé
                 le passage secret&nbsp;!
                 </p>
+
+<button class="bouton-continuer-secret" id="continuerSecret">
+    Continuer le jeu →
+</button>
 
             </div>
 
