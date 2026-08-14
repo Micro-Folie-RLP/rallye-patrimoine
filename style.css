@@ -928,3 +928,49 @@ transform:translateY(0) scale(1);
     transform:scale(.98);
 
 }
+
+.bouton-continuer-secret{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px 20px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2f6f42;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:transform .2s ease,
+               background .2s ease,
+               box-shadow .2s ease;
+
+}
+
+.bouton-continuer-secret:hover{
+
+    background:#235533;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+
+}
+
+.bouton-continuer-secret:active{
+
+    transform:scale(.97);
+
+}
