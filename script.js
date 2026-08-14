@@ -344,6 +344,10 @@ Touchez ce parchemin pour poursuivre votre découverte…
 
         afficherClef();
 
+  };
+
+}
+        
     // ===============================
 // RESULTAT DE LA DECOUVERTE
 // ===============================
