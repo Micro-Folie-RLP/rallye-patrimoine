@@ -440,12 +440,17 @@ function afficherResultatClef(reponse){
                 l'enregistrement de votre découverte.
                 </p>
 
+                <button class="bouton-continuer-secret" id="continuerSecret">
+                    Continuer le jeu →
+                </button>
+
             </div>
 
         `;
 
-        return;
+        installerBoutonContinuerSecret();
 
+        return;
     }
 
 
@@ -470,16 +475,17 @@ function afficherResultatClef(reponse){
                 La découverte précédente reste enregistrée.
                 </p>
 
-<button class="bouton-continuer-secret" id="continuerSecret">
-    Continuer le jeu →
-</button>
+                <button class="bouton-continuer-secret" id="continuerSecret">
+                    Continuer le jeu →
+                </button>
 
             </div>
 
         `;
 
-        return;
+        installerBoutonContinuerSecret();
 
+        return;
     }
 
 
@@ -517,16 +523,17 @@ function afficherResultatClef(reponse){
                 de la médiathèque pour récupérer votre cadeau.
                 </p>
 
-<button class="bouton-continuer-secret" id="continuerSecret">
-    Continuer le jeu →
-</button>
+                <button class="bouton-continuer-secret" id="continuerSecret">
+                    Continuer le jeu →
+                </button>
 
             </div>
 
         `;
 
-        return;
+        installerBoutonContinuerSecret();
 
+        return;
     }
 
 
@@ -563,32 +570,44 @@ function afficherResultatClef(reponse){
                 le passage secret&nbsp;!
                 </p>
 
-<button class="bouton-continuer-secret" id="continuerSecret">
-    Continuer le jeu →
-</button>
+                <button class="bouton-continuer-secret" id="continuerSecret">
+                    Continuer le jeu →
+                </button>
 
             </div>
 
         `;
 
-        return;
+        installerBoutonContinuerSecret();
 
+        return;
     }
+}
+
+
+// =======================================
+// BOUTON CONTINUER APRES LE SECRET
+// =======================================
+
+function installerBoutonContinuerSecret(){
 
     const boutonContinuer = document.getElementById("continuerSecret");
 
-    if (boutonContinuer) {
+    if(!boutonContinuer) return;
 
-        boutonContinuer.onclick = function(){
+    boutonContinuer.onclick = function(){
 
-            changerEtape(etapeActuelle + 1);
+        const defi = document.querySelector(".defi");
+        const navigation = document.querySelector(".navigation");
 
-        };
+        if(defi) defi.style.display = "";
+        if(navigation) navigation.style.display = "";
 
-    }
-    
+        changerEtape(etapeActuelle + 1);
+
+    };
+
 }
-
 // =======================================
 // CHOIX DU PSEUDO
 // =======================================
