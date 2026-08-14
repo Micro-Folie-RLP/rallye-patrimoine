@@ -575,6 +575,18 @@ function afficherResultatClef(reponse){
 
     }
 
+    const boutonContinuer = document.getElementById("continuerSecret");
+
+    if (boutonContinuer) {
+
+        boutonContinuer.onclick = function(){
+
+            changerEtape(etapeActuelle + 1);
+
+        };
+
+    }
+    
 }
 
 // =======================================
