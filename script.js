@@ -138,14 +138,166 @@ function afficherEtape() {
 
     const ecran = parcours[etapeActuelle];
 
+    if (!ecran) {
+        console.error("Étape introuvable :", etapeActuelle);
+        return;
+    }
+
     const contenu = document.querySelector(".carte");
     const defi = document.querySelector(".defi");
     const boutonSuivant = document.getElementById("suivant");
-const boutonPrecedent = document.getElementById("precedent");
+    const boutonPrecedent = document.getElementById("precedent");
 
+    // =======================================
+    // RESTAURER LA STRUCTURE NORMALE DE LA CARTE
+    // =======================================
+
+    contenu.innerHTML = `
+        <img src="" alt="Illustration">
+        <h2></h2>
+        <p></p>
+    `;
+
+    // =======================================
+    // Récupérer les éléments
+    // =======================================
+
+    const titre = contenu.querySelector("h2");
+    const texte = contenu.querySelector("p");
+    const image = contenu.querySelector("img");
+
+    // =======================================
     // Titre
-    contenu.querySelector("h2").textContent =
-ecran.icone + " " + ecran.titre;
+    // =======================================
+
+    titre.textContent =
+        ecran.icone + " " + ecran.titre;
+
+    // =======================================
+    // Texte
+    // =======================================
+
+    texte.textContent = ecran.texte;
+
+    // =======================================
+    // Image
+    // =======================================
+
+    etatPuits = 0;
+
+    image.onclick = null;
+    image.style.cursor = "default";
+
+    if (ecran.image) {
+
+        image.src = ecran.image;
+        image.style.display = "block";
+
+    } else {
+
+        image.style.display = "none";
+
+    }
+
+    // =======================================
+    // Easter Egg : le puits devient cliquable
+    // =======================================
+
+    if (ecran.id === 11) {
+
+        image.style.cursor = "pointer";
+
+        image.onclick = function () {
+
+            if (etatPuits === 0) {
+
+                image.src = "puits_ouvert.jpg";
+                etatPuits = 1;
+                return;
+
+            }
+
+            if (etatPuits === 1) {
+
+                afficherParchemin();
+                etatPuits = 2;
+                return;
+
+            }
+
+        };
+
+    }
+
+    // =======================================
+    // Défi
+    // =======================================
+
+    if (ecran.defi === "") {
+
+        defi.style.display = "none";
+
+    } else {
+
+        defi.style.display = "block";
+        defi.querySelector("p").textContent = ecran.defi;
+
+    }
+
+    // =======================================
+    // Bouton
+    // =======================================
+
+    boutonSuivant.textContent = ecran.bouton;
+
+    if (etapeActuelle === 0) {
+
+        boutonPrecedent.style.display = "none";
+
+    } else {
+
+        boutonPrecedent.style.display = "block";
+
+    }
+
+    // =======================================
+    // Progression
+    // =======================================
+
+    const totalEtapes =
+        parcours.filter(x => x.type === "etape").length;
+
+    let numero = ecran.numero || 0;
+
+    if (numero === 0) {
+
+        document.querySelector(".progression p").innerHTML =
+            "Bienvenue";
+
+        document.querySelector(".remplissage").style.width = "0%";
+
+    } else {
+
+        document.querySelector(".progression p").innerHTML =
+            "Étape <strong>" + numero +
+            "</strong> sur <strong>" +
+            totalEtapes + "</strong>";
+
+        document.querySelector(".remplissage").style.width =
+            (numero / totalEtapes * 100) + "%";
+
+    }
+
+    setTimeout(() => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+
+    }, 50);
+
+}
 
     // Texte
     contenu.querySelector("p").textContent = ecran.texte;
