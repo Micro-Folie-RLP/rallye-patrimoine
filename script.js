@@ -344,6 +344,155 @@ Touchez ce parchemin pour poursuivre votre découverte…
 
         afficherClef();
 
+    // ===============================
+// RESULTAT DE LA DECOUVERTE
+// ===============================
+
+function afficherResultatClef(reponse){
+
+    const carte=document.querySelector(".carte");
+
+
+    // Erreur de communication
+
+    if(!reponse || !reponse.succes){
+
+        carte.innerHTML=`
+
+            <div class="parchemin">
+
+                <h3>📜 Le secret du puits</h3>
+
+                <p>
+                Le secret a bien été découvert.
+                </p>
+
+                <p>
+                Une erreur empêche toutefois
+                l'enregistrement de votre découverte.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // Pseudo déjà enregistré
+
+    if(reponse.dejaEnregistre){
+
+        carte.innerHTML=`
+
+            <div class="parchemin">
+
+                <h3>🔑 Secret déjà découvert</h3>
+
+                <p>
+                Ce pseudo a déjà été enregistré
+                dans le registre.
+                </p>
+
+                <p>
+                La découverte précédente reste enregistrée.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // ===============================
+    // GAGNANT
+    // ===============================
+
+    if(reponse.gagnant){
+
+        carte.innerHTML=`
+
+            <div class="parchemin">
+
+                <h3>🎉 Félicitations&nbsp;!</h3>
+
+                <p>
+                Vous êtes le
+                <strong>${reponse.rang}ᵉ explorateur</strong>
+                à découvrir le secret du vieux puits !
+                </p>
+
+                <p>
+                🗝️ Vous avez trouvé la salle secrète.
+                </p>
+
+                <p>
+                🎟️ <strong>
+                Vous remportez l'un des cinq tickets
+                de cinéma offerts par la commune&nbsp;!
+                </strong>
+                </p>
+
+                <p>
+                Présentez cet écran à l'accueil
+                de la médiathèque pour récupérer votre cadeau.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // ===============================
+    // CINQ TICKETS DEJA ATTRIBUES
+    // ===============================
+
+    if(reponse.complet){
+
+        carte.innerHTML=`
+
+            <div class="parchemin">
+
+                <h3>🔑 Secret découvert&nbsp;!</h3>
+
+                <p>
+                Félicitations&nbsp;!
+                Vous avez réussi à découvrir
+                le secret du vieux puits.
+                </p>
+
+                <p>
+                Vous êtes malheureusement arrivé après
+                les cinq premiers explorateurs.
+                </p>
+
+                <p>
+                🎟️ Les cinq tickets de cinéma offerts
+                par la commune ont déjà été remportés.
+                </p>
+
+                <p>
+                Mais vous pouvez être fier d'avoir trouvé
+                le passage secret&nbsp;!
+                </p>
+
+            </div>
+
+        `;
+
+    }
+
+}    
+        
     };
 
 }
@@ -377,12 +526,36 @@ function afficherClef(){
     const clef=document.getElementById("clefSecrete");
 
 
+    // Animation d'apparition de la clef
+
     setTimeout(()=>{
 
         clef.classList.add("apparition");
 
     },100);
 
+
+    // =======================================
+    // CLIC SUR LA CLEF
+    // =======================================
+
+    clef.onclick=function(){
+
+        // Empêcher plusieurs clics
+
+        clef.onclick=null;
+
+
+        // Enregistrer la découverte auprès
+        // du registre Google
+
+        enregistrerDecouverte(function(reponse){
+
+            afficherResultatClef(reponse);
+
+        });
+
+    };
 
 }
 
