@@ -743,7 +743,8 @@ function afficherResultatClef(reponse){
 
 function installerBoutonContinuerSecret(){
 
-    const boutonContinuer = document.getElementById("continuerSecret");
+    const boutonContinuer =
+        document.getElementById("continuerSecret");
 
     if(!boutonContinuer) return;
 
