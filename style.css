@@ -979,34 +979,50 @@ transform:translateY(0) scale(1);
    BOUTON PLAN
    =============================== */
 
-#boutonPlan {
-    display: block;
-    width: calc(100% - 64px);
-    max-width: 560px;
-    height: 58px;
-    margin: 18px auto 10px auto;
+#boutonPlan{
 
-    background: white;
-    color: #2f7d4a;
+    width:100%;
 
-    border: 3px solid #2f7d4a;
-    border-radius: 18px;
+    height:58px;
 
-    font-size: 20px;
-    font-weight: bold;
+    margin-top:12px;
 
-    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+    padding:0 20px;
 
-    cursor: pointer;
-    transition: transform 0.15s ease,
-                box-shadow 0.15s ease,
-                background 0.15s ease;
+    background:white;
+
+    color:#2f6f42;
+
+    border:3px solid #2f6f42;
+
+    border-radius:18px;
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    box-shadow:
+        0 6px 16px rgba(0,0,0,.08);
+
+    cursor:pointer;
+
+    transition:
+        transform .15s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+
 }
 
-/* Petit effet lorsqu'on appuie */
-#boutonPlan:active {
-    transform: scale(0.97);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+
+/* Petit effet au toucher */
+
+#boutonPlan:active{
+
+    transform:scale(.98);
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,.08);
+
 }
 
 /* ===============================
