@@ -379,6 +379,12 @@ flex:1;
 
 }
 
+#boutonPlan{
+
+    flex-basis:100%;
+
+}
+
 #precedent:hover{
 
 background:#dddddd;
