@@ -981,13 +981,11 @@ transform:translateY(0) scale(1);
 
 .bouton-plan{
 
-    display:block;
-
     width:100%;
 
-    margin-top:15px;
+    padding:15px;
 
-    padding:13px 20px;
+    margin-top:10px;
 
     background:white;
 
@@ -995,13 +993,15 @@ transform:translateY(0) scale(1);
 
     border:2px solid #2f6f42;
 
-    border-radius:14px;
+    border-radius:15px;
 
-    font-size:16px;
+    font-size:18px;
 
     font-weight:bold;
 
     cursor:pointer;
+
+    box-sizing:border-box;
 
     transition:all .2s ease;
 
@@ -1012,6 +1012,12 @@ transform:translateY(0) scale(1);
     background:#2f6f42;
 
     color:white;
+
+}
+
+.bouton-plan:active{
+
+    transform:scale(.98);
 
 }
 
