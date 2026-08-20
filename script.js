@@ -147,6 +147,9 @@ function afficherEtape() {
     const defi = document.querySelector(".defi");
     const boutonSuivant = document.getElementById("suivant");
     const boutonPrecedent = document.getElementById("precedent");
+    const fenetrePlan = document.getElementById("fenetrePlan");
+const fermerPlan = document.getElementById("fermerPlan");
+const navigation = document.querySelector(".navigation");
 
     // =======================================
     // RESTAURER LA STRUCTURE NORMALE DE LA CARTE
