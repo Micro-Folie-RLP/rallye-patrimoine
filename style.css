@@ -974,3 +974,122 @@ transform:translateY(0) scale(1);
     transform:scale(.97);
 
 }
+
+/* ===============================
+   BOUTON PLAN
+   =============================== */
+
+.bouton-plan{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:13px 20px;
+
+    background:white;
+
+    color:#2f6f42;
+
+    border:2px solid #2f6f42;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+
+}
+
+.bouton-plan:hover{
+
+    background:#2f6f42;
+
+    color:white;
+
+}
+
+
+/* ===============================
+   FENÊTRE DU PLAN
+   =============================== */
+
+.fenetre-plan{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+}
+
+
+/* Plan */
+
+.fenetre-plan img{
+
+    max-width:100%;
+
+    max-height:100%;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:8px;
+
+    touch-action:pinch-zoom;
+
+}
+
+
+/* Bouton fermer */
+
+.fermer-plan{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    z-index:10000;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#333;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
