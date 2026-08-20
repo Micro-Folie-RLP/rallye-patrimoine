@@ -979,49 +979,35 @@ transform:translateY(0) scale(1);
    BOUTON PLAN
    =============================== */
 
-.bouton-plan {
-
-    width: 145px;
-    height: 145px;
-
-    padding: 10px;
-
-    margin-top: 10px;
-
-    box-sizing: border-box;
+#boutonPlan {
+    display: block;
+    width: calc(100% - 64px);
+    max-width: 560px;
+    height: 58px;
+    margin: 18px auto 10px auto;
 
     background: white;
+    color: #2f7d4a;
 
-    color: #2f6f42;
+    border: 3px solid #2f7d4a;
+    border-radius: 18px;
 
-    border: 2px solid #2f6f42;
-
-    border-radius: 15px;
-
-    font-size: 18px;
-
+    font-size: 20px;
     font-weight: bold;
 
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+
     cursor: pointer;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    transition: all .2s ease;
-
+    transition: transform 0.15s ease,
+                box-shadow 0.15s ease,
+                background 0.15s ease;
 }
 
-.bouton-plan:active {
-
-    transform: scale(.97);
-
+/* Petit effet lorsqu'on appuie */
+#boutonPlan:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
 }
-
 
 /* ===============================
    FENÊTRE DU PLAN
