@@ -274,7 +274,7 @@ if (ecran.type === "indice") {
 
     boutonPlan.textContent = "🗺️ PLAN";
 
-    navigation.appendChild(boutonPlan);
+    document.querySelector(".defi").appendChild(boutonPlan);
 
 
     boutonPlan.onclick = function(){
