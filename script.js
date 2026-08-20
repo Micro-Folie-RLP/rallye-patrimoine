@@ -255,33 +255,28 @@ const navigation = document.querySelector(".navigation");
 // BOUTON PLAN
 // =======================================
 
-// Supprimer un éventuel ancien bouton
+// Supprimer un éventuel ancien bouton PLAN
 const ancienBoutonPlan = document.getElementById("boutonPlan");
 
 if (ancienBoutonPlan) {
     ancienBoutonPlan.remove();
 }
 
-// Le bouton apparaît uniquement sur les pages "indice"
+// Le bouton PLAN apparaît uniquement sur les indices
 if (ecran.type === "indice") {
 
     const boutonPlan = document.createElement("button");
 
     boutonPlan.id = "boutonPlan";
-    boutonPlan.className = "bouton-plan";
+
     boutonPlan.textContent = "🗺️ PLAN";
 
-    // On place le bouton juste sous la zone de navigation
-    navigation.insertAdjacentElement("afterend", boutonPlan);
+    // On place le bouton dans la navigation
+    navigation.appendChild(boutonPlan);
 
     boutonPlan.onclick = function () {
 
-        const fenetrePlan =
-            document.getElementById("fenetrePlan");
-
-        if (fenetrePlan) {
-            fenetrePlan.style.display = "flex";
-        }
+        fenetrePlan.style.display = "flex";
 
     };
 
