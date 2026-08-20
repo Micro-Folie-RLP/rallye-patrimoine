@@ -251,6 +251,40 @@ const navigation = document.querySelector(".navigation");
     // Bouton
     // =======================================
 
+// =======================================
+// BOUTON PLAN
+// =======================================
+
+let ancienBoutonPlan = document.getElementById("boutonPlan");
+
+if (ancienBoutonPlan) {
+
+    ancienBoutonPlan.remove();
+
+}
+
+
+if (ecran.type === "indice") {
+
+    const boutonPlan = document.createElement("button");
+
+    boutonPlan.id = "boutonPlan";
+
+    boutonPlan.className = "bouton-plan";
+
+    boutonPlan.textContent = "🗺️ PLAN";
+
+    navigation.appendChild(boutonPlan);
+
+
+    boutonPlan.onclick = function(){
+
+        fenetrePlan.style.display = "flex";
+
+    };
+
+}
+    
     boutonSuivant.textContent = ecran.bouton;
 
     if (etapeActuelle === 0) {
