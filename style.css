@@ -331,13 +331,15 @@ padding:16px;
 
 .navigation{
 
-display:flex;
+    display:flex;
 
-gap:12px;
+    flex-wrap:wrap;
 
-margin-top:15px;
+    gap:12px;
 
-align-items:stretch;
+    margin-top:15px;
+
+    align-items:stretch;
 
 }
 
