@@ -754,6 +754,16 @@ champPseudo.addEventListener("keydown", (event) => {
 
     }
 
+// ===============================
+// FERMETURE DU PLAN
+// ===============================
+
+document.getElementById("fermerPlan").addEventListener("click", function(){
+
+    document.getElementById("fenetrePlan").style.display = "none";
+
+});
+    
 });
 
 // Lancement
