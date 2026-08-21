@@ -31,6 +31,10 @@
     "texte": "Vous avez tourné les pages des histoires… maintenant, cherchez la forêt où les arbres racontent les leurs.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 25.75,
+    "y": 64.00
+}
   },
   {
     "id": 3,
@@ -53,6 +57,10 @@
     "texte": "Écoutez l’eau qui coule sous le pont : c’est là que votre chemin continue !",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 26.60,
+    "y": 21.76
+}
   },
   {
     "id": 5,
@@ -75,6 +83,10 @@
     "texte": "En chemin vers l’Église, un petit oratoire vous attend.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 29.31,
+    "y": 35.98
+}
   },
   {
     "id": 7,
@@ -97,6 +109,10 @@
     "texte": "Suivez le chemin qui monte vers les cloches.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 31.34,
+    "y": 35.57
+}
   },
   {
     "id": 9,
@@ -119,6 +135,10 @@
     "texte": "Cherchez l’eau qui dort sous la terre. Le puits est là, comme un trésor caché !",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 41.09,
+    "y": 19.68
+}
   },
   {
     "id": 11,
@@ -141,6 +161,10 @@
     "texte": "Un puits c’est bien, quatre c’est encore mieux ! Cherchez-les sur le chemin des Bertrands.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 49.81,
+    "y": 52.46
+}
   },
   {
     "id": 13,
@@ -163,6 +187,10 @@
     "texte": "L’eau coule et clapote encore… Allez voir où l’on lavait le linge autrefois.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 70.74,
+    "y": 59.53
+}
   },
   {
     "id": 15,
@@ -185,6 +213,10 @@
     "texte": "Rendez-vous là où l’on faisait cuire du pain.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 70.83,
+    "y": 54.50
+}
   },
   {
     "id": 17,
@@ -207,6 +239,10 @@
     "texte": "Cherchez le plus ancien lieu de culte",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 85.35,
+    "y": 52.76
+}
   },
   {
     "id": 19,
@@ -229,6 +265,10 @@
     "texte": "Espace central dans des manifestations culturelles de la commune, ce jardin offre aujourd'hui un espace scénique et des terrains de pétanque proches de la médiathèque.",
     "defi": "",
     "bouton": "J'ai trouvé !"
+    "plan": {
+    "x": 44.29,
+    "y": 61.57
+}
   },
   {
     "id": 21,
