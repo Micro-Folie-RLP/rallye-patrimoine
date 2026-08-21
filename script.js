@@ -271,12 +271,26 @@ if (ecran.type === "indice") {
 
     boutonPlan.textContent = "🗺️ PLAN";
 
-    // On place le bouton dans la navigation
     navigation.appendChild(boutonPlan);
 
     boutonPlan.onclick = function () {
 
         fenetrePlan.style.display = "flex";
+
+        const marqueur = document.getElementById("marqueurPlan");
+
+        // Aucun marqueur par défaut
+        marqueur.style.display = "none";
+
+        // Si cet indice possède des coordonnées
+        if (ecran.plan) {
+
+            marqueur.style.left = ecran.plan.x + "%";
+            marqueur.style.top = ecran.plan.y + "%";
+
+            marqueur.style.display = "block";
+
+        }
 
     };
 
