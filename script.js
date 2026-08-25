@@ -512,21 +512,18 @@ function afficherClef(){
     },100);
 
 
-    // =======================================
-    // CLIC SUR LA CLEF
-    // =======================================
+ // =======================================
+// CLIC SUR LA CLEF
+// =======================================
 
-    clef.onclick = function(){
-
-    // Empêcher les clics multiples pendant la vérification
+function gererClicClef(){
 
     clef.onclick = null;
 
-    // Petit retour visuel immédiat
-
     clef.classList.add("clef-verification");
 
-    const message = clef.parentElement.querySelector("p");
+    const message =
+        clef.parentElement.querySelector("p");
 
     if (message) {
 
@@ -535,13 +532,7 @@ function afficherClef(){
 
     }
 
-    // ===============================
-    // Communication avec le registre
-    // ===============================
-
     enregistrerDecouverte(function(reponse){
-
-        // Réponse reçue
 
         if (reponse && reponse.succes) {
 
@@ -550,10 +541,6 @@ function afficherClef(){
             return;
 
         }
-
-        // ===============================
-        // Problème de communication
-        // ===============================
 
         if (reponse && reponse.erreur === "timeout") {
 
@@ -567,15 +554,15 @@ function afficherClef(){
 
         }
 
-        // Permettre un nouvel essai
-
         clef.classList.remove("clef-verification");
 
-        clef.onclick = arguments.callee;
+        clef.onclick = gererClicClef;
 
     });
 
-};
+}
+
+clef.onclick = gererClicClef;
 
 // ===============================
 // RESULTAT DE LA DECOUVERTE DE LA CLEF
