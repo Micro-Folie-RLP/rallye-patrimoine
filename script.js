@@ -25,61 +25,39 @@ function enregistrerDecouverte(callback) {
 
         console.log("Aucun pseudo trouvé.");
 
-        callback({
-            succes: false,
-            erreur: "pseudo"
-        });
-
         return;
 
     }
+
 
     const script = document.createElement("script");
 
     const callbackName =
         "rallyeReponse_" + Date.now();
 
-    let termine = false;
-
-    // ===============================
-    // Fonction de nettoyage
-    // ===============================
-
-    function terminer(reponse) {
-
-        if (termine) return;
-
-        termine = true;
-
-        clearTimeout(timeout);
-
-        if (script.parentNode) {
-            script.parentNode.removeChild(script);
-        }
-
-        delete window[callbackName];
-
-        if (callback) {
-            callback(reponse);
-        }
-
-    }
-
-    // ===============================
-    // Réponse de Google Apps Script
-    // ===============================
 
     window[callbackName] = function(reponse) {
 
         console.log("Réponse du registre :", reponse);
 
-        terminer(reponse);
+
+        // Supprimer le script après utilisation
+
+        document.body.removeChild(script);
+
+        delete window[callbackName];
+
+
+        // Donner la réponse à la fonction appelante
+
+        if (callback) {
+
+            callback(reponse);
+
+        }
 
     };
 
-    // ===============================
-    // Appel Google Apps Script
-    // ===============================
 
     script.src =
         URL_REGISTRE +
@@ -89,27 +67,8 @@ function enregistrerDecouverte(callback) {
         "&callback=" +
         callbackName;
 
+
     document.body.appendChild(script);
-
-    // ===============================
-    // Sécurité : délai maximum
-    // ===============================
-
-    const timeout = setTimeout(function() {
-
-        console.warn(
-            "Le registre n'a pas répondu dans le délai prévu."
-        );
-
-        terminer({
-
-            succes: false,
-
-            erreur: "timeout"
-
-        });
-
-    }, 8000);
 
 }
 
@@ -512,57 +471,29 @@ function afficherClef(){
     },100);
 
 
- // =======================================
-// CLIC SUR LA CLEF
-// =======================================
+    // =======================================
+    // CLIC SUR LA CLEF
+    // =======================================
 
-function gererClicClef(){
+    clef.onclick=function(){
 
-    clef.onclick = null;
+        // Empêcher plusieurs clics
 
-    clef.classList.add("clef-verification");
+        clef.onclick=null;
 
-    const message =
-        clef.parentElement.querySelector("p");
 
-    if (message) {
+        // Enregistrer la découverte auprès
+        // du registre Google
 
-        message.textContent =
-            "Vérification de votre découverte…";
-
-    }
-
-    enregistrerDecouverte(function(reponse){
-
-        if (reponse && reponse.succes) {
+        enregistrerDecouverte(function(reponse){
 
             afficherResultatClef(reponse);
 
-            return;
+        });
 
-        }
-
-        if (reponse && reponse.erreur === "timeout") {
-
-            message.textContent =
-                "La connexion avec le registre a pris trop de temps.";
-
-        } else {
-
-            message.textContent =
-                "Impossible de contacter le registre pour le moment.";
-
-        }
-
-        clef.classList.remove("clef-verification");
-
-        clef.onclick = gererClicClef;
-
-    });
+    };
 
 }
-
-clef.onclick = gererClicClef;
 
 // ===============================
 // RESULTAT DE LA DECOUVERTE DE LA CLEF
