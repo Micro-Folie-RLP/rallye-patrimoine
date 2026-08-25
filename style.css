@@ -1200,20 +1200,3 @@ transform:translateY(0) scale(1);
     }
 
 }
-
-/* =========================================
-   Vérification de la clef
-========================================= */
-
-.clef-verification{
-
-    opacity:.65;
-
-    transform:
-        rotate(0deg)
-        scale(.95);
-
-    filter:
-        drop-shadow(0 0 8px rgba(47,111,66,.35));
-
-}
