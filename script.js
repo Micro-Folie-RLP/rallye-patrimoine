@@ -25,39 +25,61 @@ function enregistrerDecouverte(callback) {
 
         console.log("Aucun pseudo trouvé.");
 
+        callback({
+            succes: false,
+            erreur: "pseudo"
+        });
+
         return;
 
     }
-
 
     const script = document.createElement("script");
 
     const callbackName =
         "rallyeReponse_" + Date.now();
 
+    let termine = false;
+
+    // ===============================
+    // Fonction de nettoyage
+    // ===============================
+
+    function terminer(reponse) {
+
+        if (termine) return;
+
+        termine = true;
+
+        clearTimeout(timeout);
+
+        if (script.parentNode) {
+            script.parentNode.removeChild(script);
+        }
+
+        delete window[callbackName];
+
+        if (callback) {
+            callback(reponse);
+        }
+
+    }
+
+    // ===============================
+    // Réponse de Google Apps Script
+    // ===============================
 
     window[callbackName] = function(reponse) {
 
         console.log("Réponse du registre :", reponse);
 
-
-        // Supprimer le script après utilisation
-
-        document.body.removeChild(script);
-
-        delete window[callbackName];
-
-
-        // Donner la réponse à la fonction appelante
-
-        if (callback) {
-
-            callback(reponse);
-
-        }
+        terminer(reponse);
 
     };
 
+    // ===============================
+    // Appel Google Apps Script
+    // ===============================
 
     script.src =
         URL_REGISTRE +
@@ -67,8 +89,27 @@ function enregistrerDecouverte(callback) {
         "&callback=" +
         callbackName;
 
-
     document.body.appendChild(script);
+
+    // ===============================
+    // Sécurité : délai maximum
+    // ===============================
+
+    const timeout = setTimeout(function() {
+
+        console.warn(
+            "Le registre n'a pas répondu dans le délai prévu."
+        );
+
+        terminer({
+
+            succes: false,
+
+            erreur: "timeout"
+
+        });
+
+    }, 8000);
 
 }
 
