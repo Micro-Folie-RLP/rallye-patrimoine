@@ -516,25 +516,66 @@ function afficherClef(){
     // CLIC SUR LA CLEF
     // =======================================
 
-    clef.onclick=function(){
+    clef.onclick = function(){
 
-        // Empêcher plusieurs clics
+    // Empêcher les clics multiples pendant la vérification
 
-        clef.onclick=null;
+    clef.onclick = null;
 
+    // Petit retour visuel immédiat
 
-        // Enregistrer la découverte auprès
-        // du registre Google
+    clef.classList.add("clef-verification");
 
-        enregistrerDecouverte(function(reponse){
+    const message = clef.parentElement.querySelector("p");
+
+    if (message) {
+
+        message.textContent =
+            "Vérification de votre découverte…";
+
+    }
+
+    // ===============================
+    // Communication avec le registre
+    // ===============================
+
+    enregistrerDecouverte(function(reponse){
+
+        // Réponse reçue
+
+        if (reponse && reponse.succes) {
 
             afficherResultatClef(reponse);
 
-        });
+            return;
 
-    };
+        }
 
-}
+        // ===============================
+        // Problème de communication
+        // ===============================
+
+        if (reponse && reponse.erreur === "timeout") {
+
+            message.textContent =
+                "La connexion avec le registre a pris trop de temps.";
+
+        } else {
+
+            message.textContent =
+                "Impossible de contacter le registre pour le moment.";
+
+        }
+
+        // Permettre un nouvel essai
+
+        clef.classList.remove("clef-verification");
+
+        clef.onclick = arguments.callee;
+
+    });
+
+};
 
 // ===============================
 // RESULTAT DE LA DECOUVERTE DE LA CLEF
