@@ -2,289 +2,289 @@
   {
     "id": 0,
     "type": "accueil",
-    "icone":"🌿",
+    "icone": "🌿",
     "numero": 0,
-    "titre": "Bienvenue dans ce jeu grandeur nature - Rallye Photos !",
+    "titre": "À la découverte de Roquefort-les-Pins",
     "image": "EGLISE - page accueil - etape 5 - page de fin.jpg",
-    "texte": "Préparez-vous à explorer votre commune, à relever des défis et à observer les lieux sous un nouvel angle.\n\nEn équipe ou en solo, votre mission sera de :\n\n• Capturer des photos selon les thèmes ou défis proposés.\n• Réaliser des défis amusants et originaux.\n\nLe tout dans un esprit de découverte, de respect et de convivialité.\n\nConsignes importantes :\n\n• Respectez l’environnement et les espaces visités.\n• Ne dégradez rien (nature, mobilier, bâtiments…).\n• Ne dérangez pas les habitants ou les passants.\n\nRéalisation des défis :\n\n• Chaque défi doit être illustré par une photo.\n• Tous les membres de l’équipe doivent participer.\n• Les photos doivent être prises pendant le jeu (pas d’images anciennes).\n• Soyez créatifs, amusants et originaux !\nMaintenant, munissez-vous de votre téléphone, ouvrez l’œil, faites preuve d’imagination et lancez-vous dans l’aventure !\nBonne chance à tous et amusez-vous bien !",
+    "texte": "Bienvenue à Roquefort-les-Pins !\n\nPartez à la découverte du village, de ses paysages et des lieux qui racontent son histoire. Au fil de la promenade, vous rencontrerez des édifices, des espaces naturels et des témoins de la vie d’autrefois.\n\nPrenez le temps d’observer les lieux, de lire les anecdotes et de suivre les indices qui vous guideront d’une étape à l’autre. Vous pouvez parcourir cette visite à votre rythme.\n\nUne surprise se cache dans le vieux puits… Les cinq premiers visiteurs qui en découvriront le secret remporteront chacun un ticket de cinéma offert par la commune.\n\nBonne promenade et belle découverte !",
     "defi": "",
-    "bouton": "Commencer"
+    "bouton": "Découvrir la visite"
   },
   {
     "id": 1,
     "type": "etape",
-    "icone":"📚",
+    "icone": "📚",
     "numero": 1,
     "titre": "Médiathèque Bernard Pivot",
     "image": "1_auberge_bon_accueil.jpg",
     "texte": "De l'Auberge historique au Centre Culturel. Au cours du XXᵉ siècle, Le Bon Accueil était une auberge et un restaurant emblématique situés le long de l'axe principal du village. Lieu d'étape et de convivialité prisé des habitants comme des voyageurs de passage entre Grasse et la côte, l'établissement était représenté sur les cartes postales de l'époque. Après la fermeture de l'auberge, la municipalité a racheté et rénové le bâtiment pour le transformer en haut lieu de la vie associative et culturelle de la commune, devenu le Centre Culturel Le Bon Accueil. Le lieu accueille aujourd'hui la médiathèque communale, une salle d'exposition pour les artistes, l'école de musique, ainsi que le cinéma Le Pavillon Bleu.",
-    "defi": "Avant de partir, personnalisez votre affiche d’équipe (forme, couleur, nom d’équipe…), et prenez une photo de votre équipe.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 2,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 1,
     "titre": "Indice",
     "image": "Sinodon - indice etape 2.jpg",
     "texte": "Vous avez tourné les pages des histoires… maintenant, cherchez la forêt où les arbres racontent les leurs.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 25.75,
-    "y": 64.00
-}
+      "x": 25.75,
+      "y": 64
+    }
   },
   {
     "id": 3,
     "type": "etape",
-    "icone":"🌳",
+    "icone": "🌳",
     "numero": 2,
     "titre": "Parc du Sinodon",
     "image": "2_Sinodon.jpg",
     "texte": "Le Parc du Sinodon est un espace boisé de chênes verts et de résineux (Pins d’Alep et Pins maritimes), de garrigues. De nombreuses espèces de flore et de faune sont présentes dans le parc comme : la Rainette méridionale, le Crapaud commun, le Lézard des murailles, le Lézard vert, la Couleuvre Viperine, ou la Tortue d’Hermann… Le parc se trouve sur le chemin du Peïssaut qui signifie « Pays haut ». C’est certainement de cette nature omniprésente qu’est nait le surnom de « saouta Buissoun » dont étaient affublés les Roquefortois ; ceux qui n’avaient d’autres choix pour se déplacer que de sauter de buissons en buissons.",
-    "defi": "Avant de partir, trouvez et récoltez un petit seau/sac d’éléments de la nature (par exemple : écorce, feuille séchée, petite pierre, morceaux de bois, gland, une fleur…). Ils vous serviront pour une prochaine étape.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 4,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 2,
     "titre": "Indice",
     "image": "pont_de_la_miaine_indice_etape_3.jpg",
     "texte": "Écoutez l’eau qui coule sous le pont : c’est là que votre chemin continue !",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 26.60,
-    "y": 36.65
-}
+      "x": 26.6,
+      "y": 36.65
+    }
   },
   {
     "id": 5,
     "type": "etape",
-    "icone":"🌉",
+    "icone": "🌉",
     "numero": 3,
     "titre": "Pont de la Miaine",
     "image": "pont de la miaine - etape 3.jpg",
     "texte": "Ce pont fut construit en mai 1854 pour permettre aux habitants de se rendre à l’Église. La construction coûtera 209 anciens Francs à la commune. Ce pont traverse la rivière qui porte le nom de Miaine, qui vient du latin \"madera\" signifiant « être mouillé ou se répandre » ou du latin \"mediana\" signifiant « la rivière du milieu » (entre le Loup et la Brague).",
-    "defi": "Réalisez une photo artistique de votre équipe aux abords du pont.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 6,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 3,
     "titre": "Indice",
     "image": "Oratoire chemin de l'eglise - indice etape 4 - etape 4.jpg",
     "texte": "En chemin vers l’Église, un petit oratoire vous attend.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 29.31,
-    "y": 35.98
-}
+      "x": 29.31,
+      "y": 35.98
+    }
   },
   {
     "id": 7,
     "type": "etape",
-    "icone":"🕯️",
+    "icone": "🕯️",
     "numero": 4,
     "titre": "Oratoire Notre-Dame",
     "image": "Oratoire chemin de l'eglise - indice etape 4 - etape 4.jpg",
     "texte": "Un oratoire est un lieu public ou privé dédié à la prière. Les oratoires étaient des endroits où les habitants venaient se recueillir et demander protection. La commune de Roquefort-les-Pins compte plusieurs oratoires sur son territoire.",
-    "defi": "Réalisez une photo artistique de votre équipe aux abords de l’oratoire",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 8,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 4,
     "titre": "Indice",
     "image": "eglise - indice etape 5.jpg",
     "texte": "Suivez le chemin qui monte vers les cloches.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 31.34,
-    "y": 35.57
-}
+      "x": 31.34,
+      "y": 35.57
+    }
   },
   {
     "id": 9,
     "type": "etape",
-    "icone":"⛪",
+    "icone": "⛪",
     "numero": 5,
     "titre": "Eglise Notre-Dame de Canlache",
     "image": "EGLISE - page accueil - etape 5 - page de fin.jpg",
     "texte": "Notre-Dame de Canlache apparaît dans les archives dès 1351 où elle n’était alors qu’une simple chapelle. L’église actuelle fut construite vers 1690, sur les ruines de cette chapelle considérée alors comme païenne. De sobre conception générale (clocher-porche en façade avec campanile, nef en pierre apparente, fresques modernes), l’église offre une série d’œuvres, dont certaines dues à l’artiste Anton Prinner et un chemin de croix conçu par le Roquefortois Émile Riolet. S’il n’y a pas de cérémonie, n’hésite pas à rentrer dans l’église afin de voir les œuvres d’art.",
-    "defi": "Réalisez une photo artistique de votre équipe aux abords de l’église.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 10,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 5,
     "titre": "Indice",
     "image": "puit - indice etape 6 - étape 6.jpg",
     "texte": "Cherchez l’eau qui dort sous la terre. Le puits est là, comme un trésor caché !",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 37.59,
-    "y": 25.47
-}
+      "x": 37.59,
+      "y": 25.47
+    }
   },
   {
     "id": 11,
     "type": "etape",
-    "icone":"💧",
+    "icone": "💧",
     "numero": 6,
     "titre": "Puits",
     "image": "puit - indice etape 6 - étape 6.jpg",
     "texte": "Les puits étaient indispensables. Avant de les creuser, on consultait le sourcier. Un peu partout dans la campagne, on trouvait des petits puits, souvent à ras de terre et parfois accompagnés d’une auge permettant de faire boire les animaux. Le nom du chemin «Courraouts» vient du provençal «courrau» qui signifie «l’enclos».",
-    "defi": "Prenez une photo artistique de votre équipe autour du puits.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 12,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 6,
     "titre": "Indice",
     "image": "puit bertrand - indice etape 7 - etape 7.jpg",
     "texte": "Un puits c’est bien, quatre c’est encore mieux ! Cherchez-les sur le chemin des Bertrands.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 49.81,
-    "y": 52.46
-}
+      "x": 49.81,
+      "y": 52.46
+    }
   },
   {
     "id": 13,
     "type": "etape",
-    "icone":"💧",
+    "icone": "💧",
     "numero": 7,
     "titre": "Les 4 Puits",
     "image": "puit bertrand - indice etape 7 - etape 7.jpg",
     "texte": "À Roquefort, il y a des sources un peu partout sur le territoire mais de faible importance et donc non exploitables. L’eau arriva à Roquefort en 1899 avec la construction du canal du Foulon. Ce n’est qu’en 1936 que l’eau commence à arriver dans les maisons.",
-    "defi": "Réalisez une photo artistique de votre équipe aux abords des puits.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 14,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 7,
     "titre": "Indice",
     "image": "fontaine lavoir - indice etape 8.jpg",
     "texte": "L’eau coule et clapote encore… Allez voir où l’on lavait le linge autrefois.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 70.74,
-    "y": 59.53
-}
+      "x": 70.74,
+      "y": 59.53
+    }
   },
   {
     "id": 15,
     "type": "etape",
-    "icone":"⛲",
+    "icone": "⛲",
     "numero": 8,
     "titre": "Fontaine-Lavoir",
     "image": "fontaine des terres blanches - etape 8.jpg",
     "texte": "Un lavoir est un bassin alimenté en eau qui a pour vocation première de permettre de rincer le linge après l'avoir lavé. Les lavoirs étaient conçus de manière à permettre un écoulement constant de l'eau, assurant ainsi la propreté et l'hygiène. Au-delà de leur fonction pratique, les lavoirs étaient des lieux de rencontre et d'échange. Le bord du lavoir comportait en général une pierre inclinée. Les femmes, à genoux dans une sorte de bac en bois (garde-genoux), jetaient le linge dans l'eau, le tordaient en le pliant plusieurs fois, et le battaient avec un battoir en bois sur la pierre afin de l'essorer le plus possible.",
-    "defi": "Recréez une scène de lavandières avec votre équipe et prenez une photo.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 16,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 8,
     "titre": "Indice",
     "image": "four - indice etape 9.jpg",
     "texte": "Rendez-vous là où l’on faisait cuire du pain.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 70.83,
-    "y": 54.50
-}
+      "x": 70.83,
+      "y": 54.5
+    }
   },
   {
     "id": 17,
     "type": "etape",
-    "icone":"🔥",
+    "icone": "🔥",
     "numero": 9,
     "titre": "Four",
     "image": "four - etape 9.jpg",
     "texte": "Jusqu’à la révolution, le four à pain était le privilège du seigneur. Lui seul avait un four qui servait à tous, moyennant une redevance. Après, on construisit des fours communs. Ces fours étaient taillés dans une pierre volcanique très dure (la cinérite) qui provenait des carrières de Biot.",
-    "defi": "Réalisez une photo artistique de votre équipe aux abords du four à pain",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 18,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 9,
     "titre": "Indice",
     "image": "chapelle san peyre - indice etape 10.jpg",
     "texte": "Cherchez le plus ancien lieu de culte",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 85.35,
-    "y": 52.76
-}
+      "x": 85.35,
+      "y": 52.76
+    }
   },
   {
     "id": 19,
     "type": "etape",
-    "icone":"🙏",
+    "icone": "🙏",
     "numero": 10,
     "titre": "Chapelle San Peyre",
     "image": "Chapelle San Peyre - Etape 10.jpg",
     "texte": "La chapelle San Peyre fut construite au 11ème siècle, elle indique l’existence d’un nombre suffisant de croyants, et témoigne également du succès de l’évangélisation des campagnes. Secondés par l’église Saint-Michel située dans l’enceinte du château-fort (Castellas) et réservée à la cour seigneuriale, ces lieux de culte sont les deux centres de la vie rurale à l’époque médiévale.",
-    "defi": "Réalisez une photo artistique de votre équipe aux abords de la chapelle San Peyre.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 20,
     "type": "indice",
-    "icone":"🔎",
+    "icone": "🔎",
     "numero": 10,
     "titre": "Indice",
     "image": "jardin des decades - indice etape 11.jpg",
     "texte": "Espace central dans des manifestations culturelles de la commune, ce jardin offre aujourd'hui un espace scénique et des terrains de pétanque proches de la médiathèque.",
     "defi": "",
-    "bouton": "J'ai trouvé !",
+    "bouton": "J’ai trouvé le lieu",
     "plan": {
-    "x": 44.29,
-    "y": 61.57
-}
+      "x": 44.29,
+      "y": 61.57
+    }
   },
   {
     "id": 21,
     "type": "etape",
-    "icone":"🌺",
+    "icone": "🌺",
     "numero": 11,
     "titre": "Jardin des Décades",
     "image": "Jardin des décades - Etape 11.jpg",
     "texte": "Le jardin porte le nom de « Jardin des Décades ». En 1950, Monsieur Jean Camp, alors Maire, crée un évènement annuel : Les Décades de Provence. Ces décades de Provence sont des rencontres intellectuelles réunissant pendant plusieurs jours des écrivains, artistes et penseurs autour d'un thème culturel. La première édition porte sur la thématique : Définition du mot « Civilisation ». Après le quartier du Colombier et le quartier des Trois Feuillets, les Décades de Provence arrivent dans le jardin du quartier du Plan en 1969. La dernière édition de ces Décades de Provence aura lieu en 1985 et aura pour thème : « Science et conscience ».",
-    "defi": "Avec votre récolte des éléments de la nature (Étape 2), réalisez une œuvre éphémère dans le jardin des Décades. Prenez une photo de l’ensemble de votre équipe avec votre affiche autour de votre œuvre.",
-    "bouton": "J'ai réalisé mon défi"
+    "defi": "",
+    "bouton": "Continuer la visite"
   },
   {
     "id": 22,
     "type": "fin",
-    "icone":"🏆",
+    "icone": "🏆",
     "numero": 11,
     "titre": "Bravo !",
     "image": "EGLISE - page accueil - etape 5 - page de fin.jpg",

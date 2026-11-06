@@ -363,11 +363,11 @@ document.getElementById("suivant").addEventListener("click",()=>{
 
 Bravo !
 
-Vous avez terminé le Rallye Patrimoine.
+Vous avez terminé la visite de Roquefort-les-Pins.
 
-Merci d'avoir participé aux Journées Européennes du Patrimoine.
+Merci d’avoir pris le temps de découvrir le patrimoine de la commune.
 
-📸 N'oubliez pas de conserver vos photos !`);
+Bonne continuation !`);
 
         localStorage.removeItem("rallye-etape");
 
